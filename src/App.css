@@ -1,0 +1,202 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  background-color: darkslategray;
+}
+
+/* SideBar Style */
+.sideBar {
+  width: 250px;
+  height: 100%;
+  background-color: #2f4050;
+}
+
+.sideBar h3 {
+  text-align: center;
+  margin-bottom: 30px;
+  padding-top: 30px;
+}
+.sideBarList {
+  height: auto;
+  width: 100%;
+  padding: 0;
+}
+
+.sideBarList .row {
+  width: 100%;
+  height: 50px;
+  border-bottom: 2px solid black;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.sideBarList .row:hover {
+  cursor: pointer;
+  background-color: #293846;
+}
+
+.row #icons {
+  flex: 30%;
+  display: grid;
+  place-items: center;
+}
+
+.row #links {
+  flex: 70%;
+}
+
+/* NavBar Style */
+
+.navBar {
+  width: 1190px;
+  height: 60px;
+  background-color: #2f4050;
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 2px;
+  position: relative;
+}
+
+.navBar .navBar-list {
+  display: flex;
+  justify-content: flex-end;
+  flex: 50%;
+}
+
+.navBar .text {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-weight: bolder;
+  font-size: larger;
+  flex: 50%;
+}
+
+.navBar-list #row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+span {
+  position: absolute;
+  top: 3px;
+  left: 95%;
+  width: 17px;
+  height: 17px;
+  border: 3px solid #fff;
+  align-items: center;
+  text-align: center;
+  font-weight: bolder;
+  background-color: #418deb;
+  color: red;
+  border-radius: 50%;
+  font-size: 1rem;
+}
+
+.navBar-list #row:hover {
+  cursor: pointer;
+  background-color: #293846;
+}
+.navBar-list #icon {
+  padding-right: 7px;
+}
+
+.navBar-list #link {
+  color: rgba(255, 255, 255, 0.445);
+
+  font-weight: bold;
+}
+
+.link-style {
+  text-decoration: inherit;
+  color: white;
+}
+
+/*Body Content*/
+
+.body-content {
+  position: absolute;
+  justify-content: center;
+  text-align: center;
+  top: 60px;
+  left: 249px;
+  width: 1190px;
+  height: 250vh;
+  margin-left: 42px;
+  background-color: #f8f8f8;
+}
+/* home page */
+.home-container {
+  display: grid;
+  grid-template-rows: 300px;
+  gap: 10px;
+  padding: 10px;
+}
+
+.home-container > div {
+  text-align: center;
+  padding: 10px 10px;
+  font-size: 30px;
+}
+
+.images {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+button {
+  text-align: center;
+  border-radius: 1px;
+  cursor: pointer;
+  color: blue;
+  text-align: center;
+}
+
+/* cart page */
+
+.cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  counter-reset: list-number;
+}
+
+.cart #row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+  padding: 50px;
+}
+.cart #row:before {
+  counter-increment: list-number;
+  content: counter(list-number);
+  font-weight: bolder;
+}
+
+.item-cartPage {
+  padding: 0 10px;
+}
+
+.cart .item-cartPage .image {
+  border-radius: 50%;
+}
