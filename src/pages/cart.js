@@ -74,7 +74,7 @@ const Cart = () => {
             })}
           </ul>
         </div>
-        <div>total price : 112000$</div>
+
         <button
           onClick={() => {
             navigate("/");
